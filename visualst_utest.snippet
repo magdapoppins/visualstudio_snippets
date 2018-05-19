@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<CodeSnippets  
+    xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">  
+    <CodeSnippet Format="1.0.0">  
+        <Header>  
+            <Title>Unit Test</Title> 
+            <Author>Magdalena Stenius</Author> 
+            <Shortcut>utest</Shortcut>
+        </Header>  
+        <Snippet>  
+            <Declarations>
+                <Literal>  
+                    <ID>unitOfWork</ID>  
+                    <ToolTip>Unit of work being tested.</ToolTip>  
+                    <Default>"UnitOfWork"</Default>  
+                 </Literal>  
+                 <Literal>  
+                    <ID>withInput</ID>  
+                    <ToolTip>Input given to the test.</ToolTip>  
+                    <Default>"WithInput"</Default>  
+                 </Literal>  
+                 <Literal>  
+                    <ID>expectedOutcome</ID>  
+                    <ToolTip>Outcome to be expected.</ToolTip>  
+                    <Default>"ExpectedOutcome"</Default>  
+                 </Literal>  
+            </Declarations>
+            <Code Language="csharp">  
+                <![CDATA[
+                    [TestMethod]
+                    public void $unitOfWork$_$withInput$_$expectedOutcome$
+                    {
+                        $end$
+                    }
+                ]]>  
+            </Code>  
+        </Snippet>  
+    </CodeSnippet>  
+</CodeSnippets> 

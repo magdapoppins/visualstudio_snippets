@@ -1,0 +1,14 @@
+{
+    "Unit_Test": {
+        "prefix": "utest",
+        "scope": "javascript,typescript",
+        "body": [
+          "[TestMethod]",
+          "public void ${2:unitOfWork}_${1:withInput}_${3:expectedResult}) {",
+          "\t {",
+          "\t $0",
+          "}"
+        ],
+        "description": "Unit Test"
+    }
+}
